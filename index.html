@@ -35,6 +35,9 @@
                         <a class="nav-link" href="#courses">Cours</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#library">Bibliothèque</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#favorites">Favoris</a>
                     </li>
                     <li class="nav-item">
@@ -131,12 +134,95 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Cours</th>
                                     <th scope="col">Description</th>
+                                    <th scope="col">Documents</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <!-- Le contenu sera chargé dynamiquement via JavaScript -->
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library Section -->
+    <section id="library" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 class="section-title" data-aos="fade-up">Bibliothèque</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Accédez à tous mes documents, ressources et fichiers organisés par catégorie.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-up">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <ul class="nav nav-tabs" id="libraryTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="true">
+                                        <i class="fas fa-file-pdf me-2"></i>Documents
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos-library" type="button" role="tab" aria-controls="videos-library" aria-selected="false">
+                                        <i class="fas fa-video me-2"></i>Vidéos
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-library" type="button" role="tab" aria-controls="music-library" aria-selected="false">
+                                        <i class="fas fa-music me-2"></i>Musique
+                                    </button>
+                                </li>
+                            </ul>
+                            
+                            <div class="tab-content p-3" id="libraryTabsContent">
+                                <!-- Documents Tab -->
+                                <div class="tab-pane fade show active" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-4">
+                                            <div class="card h-100">
+                                                <div class="card-header bg-primary text-white">
+                                                    <h5 class="mb-0"><i class="fas fa-language me-2"></i>Anglais</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">
+                                                            <a href="resources/documents/anglais/cours_1.pdf" target="_blank" class="document-link">
+                                                                <i class="fas fa-file-pdf me-2"></i>Cours 1
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <a href="resources/documents/anglais/cours_2.pdf" target="_blank" class="document-link">
+                                                                <i class="fas fa-file-pdf me-2"></i>Cours 2
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Autres catégories de documents à ajouter ici -->
+                                    </div>
+                                </div>
+                                
+                                <!-- Videos Tab -->
+                                <div class="tab-pane fade" id="videos-library" role="tabpanel" aria-labelledby="videos-tab">
+                                    <div class="row" id="videos-library-container">
+                                        <!-- Contenu chargé dynamiquement via JavaScript -->
+                                    </div>
+                                </div>
+                                
+                                <!-- Music Tab -->
+                                <div class="tab-pane fade" id="music-library" role="tabpanel" aria-labelledby="music-tab">
+                                    <div class="row" id="music-library-container">
+                                        <!-- Contenu chargé dynamiquement via JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
