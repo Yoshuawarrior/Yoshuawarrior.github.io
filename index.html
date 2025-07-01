@@ -1,16 +1,296 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Les cadres en HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan-Josué MPIASSA - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dan-Josué</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Cours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#favorites">Favoris</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Loisirs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<frameset rows="11%,*">
-<frame src="BIENVENUE.HTML" name="fenêtre1">
-<frameset cols="25%,*">
-<frame src="nama.html" name="fenêtre2" />
-<frame src="CADRE 2.html" name="fenêtre3">
-</frameset>
-</frameset><noframes></noframes>
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold">Bienvenue sur mon Portfolio</h1>
+                    <p class="lead">Étudiant en Génie des Télécommunications et Réseaux</p>
+                    <a href="#about" class="btn btn-primary btn-lg">En savoir plus</a>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left">
+                    <img src="images/profile.jpg" alt="Dan-Josué MPIASSA" class="img-fluid rounded-circle profile-image">
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title" data-aos="fade-up">À propos de moi</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
+                <div class="col-md-6" data-aos="fade-right">
+                    <h3>Qui suis-je?</h3>
+                    <p class="lead">Je suis Dan-Josué MPIASSA, étudiant passionné en Génie des Télécommunications et Réseaux.</p>
+                    <p>J'ai l'honneur de vous présenter mon portfolio qui reflète mon parcours académique et mes intérêts personnels. Ce site a été créé pour partager mes connaissances et mes passions.</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card skills-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Mes compétences</h3>
+                            <div class="skill-item">
+                                <div class="d-flex justify-content-between">
+                                    <h6>Télécommunications</h6>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="d-flex justify-content-between">
+                                    <h6>Réseaux</h6>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="d-flex justify-content-between">
+                                    <h6>Développement Web</h6>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title" data-aos="fade-up">Mes cours</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
+                <div class="col-12" data-aos="fade-up">
+                    <div class="table-responsive">
+                        <table class="table table-hover course-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Cours</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Le contenu sera chargé dynamiquement via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorites Section -->
+    <section id="favorites" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title" data-aos="fade-up">Mes favoris</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
+            </div>
+            
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-tabs favorites-tabs" id="favoritesTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="true">Vidéos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music" type="button" role="tab" aria-controls="music" aria-selected="false">Musiques</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="websites-tab" data-bs-toggle="tab" data-bs-target="#websites" type="button" role="tab" aria-controls="websites" aria-selected="false">Sites Web</button>
+                </li>
+            </ul>
+            
+            <!-- Tabs Content -->
+            <div class="tab-content" id="favoritesTabContent">
+                <!-- Videos Tab -->
+                <div class="tab-pane fade show active" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                    <div class="row mt-4" id="videos-container">
+                        <!-- Le contenu sera chargé dynamiquement via JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Music Tab -->
+                <div class="tab-pane fade" id="music" role="tabpanel" aria-labelledby="music-tab">
+                    <div class="row mt-4" id="music-container">
+                        <!-- Le contenu sera chargé dynamiquement via JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Websites Tab -->
+                <div class="tab-pane fade" id="websites" role="tabpanel" aria-labelledby="websites-tab">
+                    <div class="row mt-4" id="websites-container">
+                        <!-- Le contenu sera chargé dynamiquement via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title" data-aos="fade-up">Mes loisirs</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
+                <div class="col-12">
+                    <div class="row" id="hobbies-container">
+                        <!-- Le contenu sera chargé dynamiquement via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title" data-aos="fade-up">Contact</h2>
+                    <div class="divider mx-auto"></div>
+                </div>
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3>Mes informations de contact</h3>
+                        <ul class="list-unstyled contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>mpiassajosue@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>josmpiassa@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+242 066346917</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+242 0532533018</span>
+                            </li>
+                        </ul>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="subject" placeholder="Sujet" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Dan-Josué MPIASSA. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Conçu avec <i class="fas fa-heart text-danger"></i> par Dan-Josué MPIASSA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
 </html>
